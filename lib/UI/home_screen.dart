@@ -67,6 +67,10 @@ class _WeatherSearchPageState extends State<WeatherSearchPage> {
             "${weather.temperature.toStringAsFixed(1)} °C",
             style: TextStyle(fontSize: 80),
           ),
+          Text(
+            "${weather.weatherDescription}",
+            style: TextStyle(fontSize: 24),
+          ),
           Image.network(
               "http://openweathermap.org/img/wn/${weather.iconCode}@2x.png"),
           CityInputField(),
